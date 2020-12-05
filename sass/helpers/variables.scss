@@ -1,0 +1,70 @@
+// FONT
+$lato: 'Lato', sans-serif;
+$dosis: 'Dosis', sans-serif;
+$lobster: 'Lobster', cursive;
+$poppins:'Poppins', sans-serif;
+
+// FONT WEIGHT
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+
+// FONT SIZES
+$fontXXL: 74px;
+$fontXL: 50px;
+$fontL: 40px;
+$fontXM: 30px;
+$fontM: 20px;
+$fontS: 16px;
+$fontXS: 14px;
+$fontXXS: 12px;
+$fontXXXS: 10px;
+
+
+
+// COLORS
+$white: #ffffff;
+$darkGrey: #42495B;
+$grey: #7A839E;
+$lightGrey: #999999;
+$ultraLightGrey: #F6F7FB;
+$logoGrey: #484848;
+$purple: #7E76F9;
+$blue:#1000FF;
+
+$grdtBlue: linear-gradient(to right, #150F70,#6156F9);
+
+$bgPurple: rgba(126, 118, 249, 0.15);
+
+
+// PADDING / MARGIN
+$xl: 5%;
+$xxl: 5%;
+
+$padM: 50px;
+
+$center: 0 auto;
+
+$mrgLi: 30px 20px 0 20px;
+
+
+// BUTTONS 
+$btnRadius: 50px;
+$btnPadding: 12px 40px;
+$lilBtnPadding: 6px 20px;
+$desktopBtn: 8px 30px;
+$desktopLilBtn: 4px 16px;
+$tabletBtn: 7px 25px;
+$phoneBtn: 5px 20px;
+$phoneLilBtn: 2px 10px;
+
+
+// RESPONSIVE 
+$respDesktop: 1350px;
+
+$respTablet: 1000px;
+
+$respPhone: 700px;

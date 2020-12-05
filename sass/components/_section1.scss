@@ -1,0 +1,143 @@
+#sct1 {
+
+    display: flex;
+    justify-content: center;
+    
+    article {
+        padding-top: 100px;
+        padding-right: 10%;
+        font-family: $poppins;
+
+        h1 {
+            color: $darkGrey;
+            font-size: $fontXL;
+            font-weight: $regular;
+
+            span {
+                font-size: $fontXXL;
+                font-weight: $bold;
+            }
+        }
+
+        p {
+            color: $grey;
+            font-size: $fontS;
+            font-weight: $light;
+        }
+
+        button {
+            background-image: $grdtBlue;
+            color: $white;
+            font-weight: $medium;
+            font-size: $fontS;
+            font-family: $poppins;
+            padding: $btnPadding;
+            border-radius: $btnRadius;
+            border: none;
+            margin-top: $fontM;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width: $respDesktop) {
+
+    #sct1 {
+
+        img {
+            width: 500px;
+        }
+        
+        article {
+    
+            h1 {
+                font-size: $fontL;
+    
+                span {
+                    font-size: $fontXL;
+                }
+            }
+    
+            p {
+                font-size: $fontXS;
+            }
+    
+            button {
+                font-size: $fontXS;
+                padding: $desktopBtn;
+            }
+        }
+    
+    }
+}
+
+
+
+
+@media screen and (max-width: $respTablet) {
+
+    #sct1 {
+
+        img {
+            width: 300px;
+        }
+        
+        article {
+    
+            h1 {
+                font-size: $fontXM;
+    
+                span {
+                    font-size: $fontL;
+                }
+            }
+    
+            p {
+                font-size: $fontXXS;
+            }
+    
+            button {
+                font-size: $fontXXS;
+                padding: $tabletBtn;
+            }
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: $respPhone) {
+
+    #sct1 {
+
+        img {
+            display: none;
+        }
+        
+        article {
+            margin: $center;
+    
+            h1 {
+                font-size: $fontM;
+    
+                span {
+                    font-size: $fontXM;
+                }
+            }
+    
+            p {
+                font-size: $fontXXS;
+            }
+    
+            button {
+                font-size: $fontXXXS;
+                padding: $phoneBtn;
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,87 @@
+main {
+
+    #mouse {
+        display: flex;
+        justify-content: center;
+        margin: $center;
+        width: 75px;
+        height: 75px;
+        border-radius: $btnRadius;
+        box-shadow: 0 10px 15px $grey;
+        margin-top: 50px;
+    }
+
+    #socials {
+        position: absolute;
+        top: 400px;
+        left: 1%;
+        li {
+            padding-bottom: 30px;
+
+            img {
+                width: 15px;
+            }
+        }
+
+        #line {
+            background-color: $blue;
+            width: 5px;
+            height: 40px;
+            margin-left: 4px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $respDesktop) {
+
+    main {
+
+        #mouse {
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 5px 10px $grey;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $respTablet) {
+    main {
+
+        #mouse {
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 3px 7px $grey;
+
+            img {
+                width: 15px;
+            }
+        }
+
+        #socials {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: $respPhone) {
+    main {
+
+        #mouse {
+            width: 30px;
+            height: 30px;
+            box-shadow: 0 2x 5px $grey;
+
+            img {
+                width: 10px;
+            }
+        }
+    }
+}

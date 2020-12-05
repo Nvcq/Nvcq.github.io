@@ -1,0 +1,256 @@
+#sct4 {
+    background-color: $bgPurple;
+    width: 100%;
+    margin-top: 150px;
+    padding-bottom: 100px;
+    
+    h4 {
+        font-family: $lobster;
+        font-weight: $regular;
+        font-size: $fontM;
+        color: $purple;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    h2 {
+        font-family: $poppins;
+        font-weight: $semiBold;
+        font-size: $fontXL;
+        color: $darkGrey;
+        text-align: center;
+        padding-bottom: 65px;
+    }
+
+    #packageLine {
+        display: flex;
+        justify-content: space-around;
+        
+
+        article {
+
+            background-color: $white;
+            width: 350px;
+            height: 430px;
+            border-radius: 30px;
+    
+            h3 {
+                font-family: $lobster;
+                font-weight: $regular;
+                font-size: 28px;
+                color: $darkGrey;
+                text-align: center;
+                padding-top: $padM;
+            }
+    
+            .txt {
+                color: $grey;
+                font-family: $poppins;
+                font-weight: $light;
+                font-size: $fontS;
+                text-align: center;
+                width: 300px;
+                margin: $center;
+                padding-top: $padM;
+            }
+    
+            .price {
+                color: $blue;
+                font-family: $poppins;
+                font-weight: $semiBold;
+                font-size: $fontXM;
+                text-align: center;
+                padding-top: $padM;
+            }
+    
+            div {
+                width: 175px;
+                margin: 30px auto 0 auto;
+    
+                button {
+                    border: 1px solid $blue;
+                    color: $darkGrey;
+                    font-family: $poppins;
+                    font-weight: $medium;
+                    font-size: $fontS;
+                    padding: $btnPadding;
+                    border-radius: $btnRadius;
+                    background-color: $white;
+                    cursor: pointer;
+                }
+    
+                button:hover {
+                    background-image: $grdtBlue;
+                    color: $white;
+                }
+            }
+    
+        }
+    
+    }
+
+}
+
+
+
+@media screen and (max-width: $respDesktop) {
+
+    #sct4 {
+        margin-top: 100px;
+        
+        h4 {
+            font-size: $fontS;
+            padding-top: 80px;
+        }
+        
+        h2 {
+            font-size: $fontL;
+        }
+    
+        #packageLine {
+            
+    
+            article {
+                width: 300px;
+                height: 370px;
+        
+                h3 {
+                    font-size: $fontM;
+                }
+        
+                .txt {
+                    font-size: $fontXS;
+                    width: 250px;
+                    padding-top: 30px;
+                }
+        
+                .price {
+                    font-size: $fontM;
+                    padding-top: 30px;
+                }
+        
+                div {
+                    width: 152px;
+                    margin: 30px auto 0 auto;
+        
+                    button {
+                        font-size: $fontS;
+                        padding: $desktopBtn;
+                    }
+        
+                }
+        
+            }
+        
+        }
+    
+    }
+
+}
+
+
+@media screen and (max-width: $respTablet) {
+    #sct4 {
+        margin-top: 75px;
+        
+        h4 {
+            font-size: $fontXS;
+        }
+        
+        h2 {
+            font-size: $fontXM;
+        }
+    
+        #packageLine {
+            
+    
+            article {
+                width: 220px;
+                height: 330px;
+        
+                h3 {
+                    font-size: $fontS;
+                }
+        
+                .txt {
+                    font-size: $fontXXS;
+                    width: 200px;
+                    padding-top: 20px;
+                }
+        
+                .price {
+                    font-size: $fontS;
+                    padding-top: 20px;
+                }
+        
+                div {
+                    width: 130px;
+                    margin: 20px auto 0 auto;
+        
+                    button {
+                        font-size: $fontXS;
+                        padding: $tabletBtn;
+                    }
+        
+                }
+        
+            }
+        
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: $respPhone) {
+    #sct4 {
+        margin-top: 0px;
+        
+        h4 {
+            font-size: $fontXXS;
+        }
+        
+        h2 {
+            font-size: $fontM;
+        }
+    
+        #packageLine {
+            
+    
+            article {
+                width: 125px;
+                height: 250px;
+        
+                h3 {
+                    font-size: $fontXS;
+                    padding-top: 30px;
+                }
+        
+                .txt {
+                    font-size: 8px;
+                    width: 100px;
+                    padding-top: 20px;
+                }
+        
+                .price {
+                    font-size: $fontXS;
+                    padding-top: 20px;
+                }
+        
+                div {
+                    width: 98px;
+                    margin: 20px auto 0 auto;
+        
+                    button {
+                        font-size: $fontXXXS;
+                        padding: $phoneBtn;
+                    }
+        
+                }
+        
+            }
+        
+        }
+    
+    }
+}

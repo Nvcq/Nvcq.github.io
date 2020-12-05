@@ -1,0 +1,292 @@
+footer {
+    position: relative;
+
+    h4 {
+        font-family: $lobster;
+        font-size: $fontM;
+        color: $purple;
+        font-weight: $regular;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    h2 {
+        font-family: $poppins;
+        font-weight: $regular;
+        font-size: 32px;
+        color: $darkGrey;
+        text-align: center;
+
+        span {
+            font-weight: $semiBold;
+        }
+    }
+
+    div {
+        margin: $center;
+        width: 645px;
+        margin-top: 50px;
+
+        input {
+            width: 450px;
+            color: $lightGrey;
+            font-family: $poppins;
+            font-weight: $regular;
+            font-size: $fontXXS;
+            padding: 15px 0 15px 25px;
+            border: none;
+            background-color: $ultraLightGrey;
+        }
+
+        button {
+            font-family: $poppins;
+            font-weight: $medium;
+            font-size: $fontS;
+            color: $white;
+            border: none;
+            border-radius: $btnRadius;
+            padding: $btnPadding;
+            background-image: $grdtBlue;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+    }
+
+
+    #sctFtr {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 600px;
+        padding-bottom: 100px;
+        background-image: url("../img/footer.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 2000px;
+        color: $white;
+        
+        #ftrLogo {
+            font-family: $dosis;
+            font-weight: $extraBold;
+            font-size: $fontXL;
+            text-align: center;
+        }
+
+        #ftrSlogan {
+            font-family: $poppins;
+            font-size: 31px;
+            font-weight: $regular;
+            text-align: center;
+        }
+
+        #ftrMedias {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            
+            .rotate {
+                transform: rotate(-90deg);
+            }
+
+            img {
+                width: 15px;
+                background-color: white;
+            }
+        }
+
+
+        .ftrTitle {
+            font-family: $poppins;
+            font-weight: $medium;
+            font-size: $fontM;
+        }
+
+        .ftrUl {
+            font-family: $poppins;
+            font-weight: $regular;
+            font-size: $fontS;
+        }
+
+    }
+
+
+    #ftrWave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -50;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: $respDesktop) {
+
+    footer {
+    
+        h4 {
+            font-size: $fontS;
+            padding-top: 125px;
+        }
+    
+        h2 {
+            font-size: 25px;
+        }
+    
+        div {
+            width: 645px;
+    
+            button {
+                font-size: $fontXS;
+                padding: $desktopBtn;
+            }
+        }
+    
+    
+        #sctFtr {
+            background-size: 1500px;
+            padding-top: 500px;
+            
+            #ftrLogo {
+                font-size: $fontL;
+            }
+    
+            #ftrSlogan {
+                font-size: 25px;
+            }
+    
+            .ftrTitle {
+                font-size: $fontS;
+            }
+    
+            .ftrUl {
+                font-size: $fontXS;
+            }
+    
+        }
+    }
+}
+
+
+@media screen and (max-width: $respTablet) {
+    footer {
+    
+        h4 {
+            font-size: $fontXS;
+            padding-top: 100px;
+        }
+    
+        h2 {
+            font-size: $fontM;
+        }
+    
+        div {
+            width: 545px;
+
+            input {
+                width: 400px;
+                font-size: $fontXXXS;
+                padding: 10px 0 10px 20px;
+            }
+    
+            button {
+                font-size: $fontXXS;
+                padding: $tabletBtn;
+            }
+        }
+    
+    
+        #sctFtr {
+            padding-top: 250px;
+            background-size: 1000px;
+            padding-bottom: 50px;
+            
+            #ftrLogo {
+                font-size: $fontXM;
+            }
+    
+            #ftrSlogan {
+                font-size: $fontM;
+            }
+    
+            .ftrTitle {
+                font-size: $fontXS;
+            }
+    
+            .ftrUl {
+                font-size: $fontXXS;
+            }
+    
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: $respPhone) {
+    footer {
+    
+        h4 {
+            font-size: $fontXXS;
+            padding-top: 50px;
+        }
+    
+        h2 {
+            font-size: $fontS;
+        }
+    
+        div {
+            width: 325px;
+
+            input {
+                width: 200px;
+                font-size: $fontXXXS;
+                padding: 10px 0 10px 20px;
+            }
+    
+            button {
+                font-size: $fontXXXS;
+                padding: $phoneBtn;
+            }
+        }
+    
+    
+        #sctFtr {
+            padding-top: 150px;
+            background-size: 800px;
+            padding-bottom: 50px;
+
+            #ftrMedias {
+    
+                img {
+                    width: 8px;
+                    background-color: white;
+                }
+            }
+            
+            #ftrLogo {
+                font-size: $fontS;
+            }
+    
+            #ftrSlogan {
+                font-size: $fontXS;
+            }
+    
+            .ftrTitle {
+                font-size: $fontXXXS;
+            }
+    
+            .ftrUl {
+                font-size: 8px;
+
+                img {
+                    width: 7px;
+                }
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,133 @@
+header {
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+
+    #logo {
+        display: flex;
+
+        p {
+            font-family: $dosis;
+            font-weight: $bold;
+            font-size: $fontL;
+            color: $logoGrey;
+            padding: 40px 0 0 20px;
+        }
+    }
+
+    ul {
+        display: flex;
+        font-family: $poppins;
+        font-weight: $medium;
+        font-size: $fontS;
+        color: $white;
+
+        li {
+            margin: $mrgLi;
+            cursor: pointer;
+        }
+    }
+
+    #wave {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -5;
+    }
+}
+
+
+
+
+@media screen and (max-width: $respDesktop) {
+
+    header {
+    
+        #logo {
+    
+            p {
+                font-size: $fontXM;
+                padding: 50px 0 0 20px;
+            }
+        }
+    
+        #wave {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -5;
+            width: 700px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $respTablet) {
+
+    header {
+    
+        #logo {
+            height: 60px;
+
+            img{
+                width: 60px;
+            }
+    
+            p {
+                font-size: $fontM;
+                padding: 30px 0 0 10px;
+            }
+        }
+
+        ul {
+            font-size: $fontXS;
+    
+            li {
+                margin: 25px 10px 0 10px;
+            }
+        }
+    
+        #wave {
+            width: 500px;
+        }
+        
+    }
+}
+
+
+
+@media screen and (max-width: $respPhone) {
+    header {
+    
+        #logo {
+            height: 40px;
+
+            img{
+                width: 40px;
+            }
+    
+            p {
+                font-size: $fontS;
+                padding: 17px 0 0 10px;
+            }
+        }
+
+        ul {
+            font-size: $fontXXS;
+            color: $blue;
+    
+            li {
+                margin: 20px 5px 0 5px;
+            }
+        }
+    
+        #wave {
+            display: none;
+        }
+        
+    }
+}
